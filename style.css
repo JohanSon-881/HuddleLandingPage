@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    display: block;
+    padding-top: 40px;
+    width: 100%;
+}
+.container-fluid {
+    width: 100%;
+    background-image:url("desktop.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+}
+/* display horizontally */
+.header ul {
+    display: flex;
+    width: 100%;
+}
+
+/*try it for free button */
+.right-try {
+    margin-left: auto;
+    padding-top: 8px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0px 0px 0 rgba(131, 128, 128, 0.2), 0 3px 10px 0 rgba(168, 166, 166, 0.25);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 160px;
+    text-align: center;
+    transition: 0.5s;
+}
+.right-try:hover {
+    background-color: whitesmoke;
+}
+.header ul li {
+    list-style: none;
+}
+.header img {
+    width: 200px;
+    padding-left: 30px;
+}
+/*text introduce the app */
+.intro-text {
+    margin-top: 100px;
+    padding-left: 30px;
+  
+}
+.intro-text p {
+    line-height: 25px;
+    margin-top: 17px;
+}
+.button {
+    background-color:  hsl(322, 100%, 66%);
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-top: 23px;
+    text-align: center;
+    padding-bottom: 14px;
+    width: 200px;
+    height: 35px;
+    border-radius: 26px;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 6px;
+  
+}
+.img img {
+    margin-left: 14px;
+}
+.app-text {
+    padding-top: 160px;
+}
+
+.side-text p{
+    color: dimgrey;
+}
+.side-text1 p {
+    color: dimgrey;
+    margin-top: 13px;
+}
+.flex1 {
+    margin-top: 100px;
+}
+.start {
+  
+    background-color: white;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 16px;
+    padding-bottom: 12px;
+    margin-top: -90px;
+   
+}
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    padding-bottom: 13px;
+}
+.button1 {
+    background-color:  hsl(322, 100%, 66%);
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-top: 23px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 26px;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 8px;
+    
+}
+.location {
+    display: flex;
+    margin-left: 12px;
+}
+.location p {
+    margin-left: 13px;
+}
+.second-col {
+    margin-left: 12px;
+}
+.third-col i {
+    color: white;
+    margin: 0 10px;
+    border-bottom: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    border-right: 1px solid dimgrey;
+    border-left: 1px solid dimgrey;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+@media screen and (max-device-width: 460px) {
+   .container-fluid {
+       background-image: url("mobile.svg");
+   }
+   .right-try {
+       width: 100px;
+       margin-bottom: 10px;
+   }
+   .intro-text p{
+       font-size: 14px;
+
+   }
+   .intro-text h1 {
+       font-size: 17px;
+
+   }
+   .intro-text br {
+       display: none;
+   }
+   .intro-text {
+       padding-left: 20px;
+   }
+   .img img {
+       width: 400px !important;
+   }
+   .side-text br {
+       display: none;
+   }
+   .side-text p {
+       margin-top: 16px;
+       text-align: center;
+   }
+   .side-text h1 {
+       text-align: center;
+       margin-top: 40px;
+   }
+   .photo {
+       display: none;
+   }
+   .side-text1 {
+       margin-top: 70px;
+   }
+   .side-text1 br {
+       display: none;
+   }
+   .side-text1 p{
+        text-align: center;
+        margin-top: 16px;
+   }
+   .side-text1 h1 {
+       text-align: center;
+   }
+   .start h1 {
+    text-align: center;
+    margin-left: 21px;
+    font-size: 22px;
+  }
+  .button1 {
+    margin-left: 70px;
+  }
+  .start {
+    width: 350px;
+    margin-left: 35px;
+  }
+  .third-col {
+      text-align: center;
+  }
+}
+@media screen and (min-width: 500px) {
+    .img2 {
+        display: none;
+    }
+   
+}
+@media only screen and (min-device-width: 768px) {
+    .start {
+        margin-left: 230px;
+        width: 540px;
+    }
+    .start h1 {
+        font-size: 22px;
+        margin-left: 67px;
+    }
+    .button1 {
+        margin-left: 120px;
+    }
+    .side-text {
+        margin-left: 120px;
+    }
+    .photo{
+        margin-left: 120px;
+    }
+    .side-text1 {
+        margin-left: 120px;
+    }
+    .photo1 {
+        margin-left: 120px;
+    }
+    .img {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1110px) {
+    .flex {
+        display: flex;
+        padding-left: auto;
+        
+    }
+    .img {
+        padding-top: 40px;
+        padding-left: 170px;
+    }
+    .app-text {
+        display: flex;
+    }
+    .photo {
+        margin-left: auto;
+        margin-right: 230px;
+    }
+    .side-text {
+        margin-left: 130px;
+    }
+    .img2 {
+        display: none;
+    }
+    .flex1 {
+        display: flex;
+        margin-left: 80px;
+    }
+    .side-text1 {
+        margin-left: auto;
+        margin-right: 200px;
+        padding-top: 70px;
+    }
+    .side-text1 p {
+        margin-top: 13px;
+    }
+    .flex1 img {
+        margin-left: 46px;
+    }
+    .start {
+        margin-left: 540px;
+        width: 500px;
+    }
+    .button1 {
+        margin-left: 120px;
+    }
+    .start h1 {
+        margin-left: 90px;
+        font-size: 21px;
+    }
+    .location {
+        margin-left: 49px;
+    }
+    .flex2 {
+        display: flex;
+    }
+    .second-col {
+        margin-left: 150px;
+    }
+    .third-col {
+        margin-left: 160px;
+    }
+}
+@media screen and (min-width: 1590px) {
+    .img {
+        padding-left: 320px;
+    }
+    .start {
+        margin-left: 640px;
+    }
+}
